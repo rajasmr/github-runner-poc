@@ -1,0 +1,15 @@
+name: ECS Runner Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-runner:
+    runs-on: self-hosted
+    steps:
+      - name: Check runner
+        run: echo "Runner is working on ECS!"
+
